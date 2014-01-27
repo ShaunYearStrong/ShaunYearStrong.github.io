@@ -13,7 +13,7 @@ So, I decided: "What if I just get it live and work on the design in increments?
 
 ![ShaunDillon.info v1][shaundillon-screenshot]
 
-This site is built on [Jekyll][jekyll] and hosted on [GitHub pages][github-pages]. I'd also like to thank [Andy Taylor][http://andytaylor.me/] as this site would not exist without his [guide on installing Jekyll on Mac OSX][jekyll-guide]. 
+This site is built on [Jekyll][jekyll] and hosted on [GitHub pages][github-pages]. I'd also like to thank [Andy Taylor][andy-taylor] as this site would not exist without his [guide on installing Jekyll on Mac OSX][jekyll-guide]. 
 
 <p class="post__signature">S.</p>
 
