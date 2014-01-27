@@ -1,0 +1,32 @@
+header {
+  @include rem(padding, 2rem 2rem 0);
+  border-bottom: 2px solid $red;
+
+  h1 a{
+    color: $blue;
+    @include rem(font-size, 4rem);
+    text-decoration: none;
+  }
+
+  nav {
+    ul {
+      li {
+        float: left;
+        @include rem(margin-left, 2rem);
+        @include rem(padding, 0.5rem);
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:hover {
+          background: $blue;
+
+          a {
+            color: $white;
+          }
+        }      
+      }
+    }
+  }
+}

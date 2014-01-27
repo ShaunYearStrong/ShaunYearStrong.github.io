@@ -1,0 +1,20 @@
+// Use Compass ('cause it rocks!)
+@import "bourbon";
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: 'Open Sans', Arial, Verdana, sans-serif;
+$base-font-weight: $regular;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+
+@import "modules/all";
