@@ -24,24 +24,23 @@
         </nav>
       </div>
     </header>
-    <div class="container">
+    <div class="container site">
       <main role="main" class="site__body">
         {{ content }} 
       </main>
 
       <div class="sidebar">
         <div class="author">
-          <img src="/img/shaundillon.jpg" class="author__image">
           <p class="author__description">
             I'm Shaun, a 25 year old front-end developer from London, UK. Here you'll find my thoughts, experiments and case studies.
           </p>
         </div>
         <div class="social-links">
           <ul>
-            <li class="social-links__twitter"><a href="https://twitter.com/ShaunYearStrong">Twitter</a></li>
-            <li class="social-links__github"><a href="https://github.com/ShaunYearStrong">GitHub</a></li>
-            <li class="social-links__google"><a href="https://plus.google.com/+ShaunDillon">Google+</a></li>
-            <li class="social-links__linkedin"><a href="https://uk.linkedin.com/">LinkedIn</a></li>
+            <li class="social-links__twitter"><a title="Twitter" href="https://twitter.com/ShaunYearStrong" class="icon-twitter"></a></li>
+            <li class="social-links__github"><a title="GitHub" href="https://github.com/ShaunYearStrong" class="icon-github"></a></li>
+            <li class="social-links__google"><a title="Google+" href="https://plus.google.com/+ShaunDillon" class="icon-gplus"></a></li>
+            <li class="social-links__linkedin"><a title="LinkedIn" href="https://uk.linkedin.com/" class="icon-linkedin"></a></li>
           </ul>
         </div>
       </div>
@@ -63,7 +62,7 @@
           </p>
         </div>
         <div class="credit">
-          <p>&copy; {{ site.time | date: '%y' }} <a href="https://twitter.com/ShaunYearStrong">Shaun Dillon</a>. Built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub pages</a>. The source code for this site can ve viewed on <a href="https://github.com/ShaunYearStrong/ShaunYearStrong.github.io">GitHub</a>.</p>
+          <p>&copy; {{ site.time | date: '%Y' }} <a href="https://twitter.com/ShaunYearStrong">Shaun Dillon</a>. Built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub pages</a>. The source code for this site can ve viewed on <a href="https://github.com/ShaunYearStrong/ShaunYearStrong.github.io">GitHub</a>.</p>
         </div>
       </div>
     </footer>

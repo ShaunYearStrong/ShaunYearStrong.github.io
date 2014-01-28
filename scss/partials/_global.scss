@@ -1,3 +1,7 @@
+* {
+  @include box-sizing(border-box);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -10,4 +14,8 @@ body {
 
 img {
 	max-width: 100%;
+}
+
+.site {
+  @include rem(padding-top, 5rem);
 }
