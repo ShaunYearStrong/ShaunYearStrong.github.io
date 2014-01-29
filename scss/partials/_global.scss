@@ -1,0 +1,21 @@
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include rem(font-size, 1.6rem);
+    color: $dark-grey;
+    font-family: $base-font-family;
+}
+
+img {
+	max-width: 100%;
+}
+
+.site {
+  @include rem(padding-top, 5rem);
+}
