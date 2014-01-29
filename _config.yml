@@ -1,4 +1,9 @@
 name: ShaunDillon.info
+description: "Front end web developer from London, UK"
 markdown: redcarpet
 pygments: true
 permalink: pretty
+
+exclude: ['README.md', 'scss/']
+
+paginate: 7
