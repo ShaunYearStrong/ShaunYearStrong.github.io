@@ -1,13 +1,23 @@
 ---
 layout: default
 title: Shaun Dillon | Front end developer
+excerpt_separator: .
 ---
 
 <div id="home" class="site--home">
   <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="posts">
+    <ul class="posts__archive">
+      {% for post in site.posts %}
+        <li class="archive__post">
+          <a href="{{ post.url }}">
+            <h2 class="post__title">{{ post.title }}</h2>
+            {{ post.excerpt }}
+            <p class="post__date">Published on {{ post.date | date: "%-d %B %Y" }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>   
+  </div>
+  
 </div>

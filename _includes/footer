@@ -1,0 +1,22 @@
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__contact">
+      <p>
+        Shaun Dillon<br />
+        Front end developer<br />
+        <a href="mailto:shaun@shaundillon.info">shaun@shaundillon.info</a>
+      </p>
+    </div>
+    <div class="footer__contact">
+      <p>
+        <a href="https://github.com/ShaunYearStrong">github.com/ShaunYearStrong</a><br />
+        <a href="https://twitter.com/ShaunYearStrong">twitter.com/ShaunYearStrong</a><br />
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__credit">
+      <p>&copy; {{ site.time | date: '%Y' }} <a href="https://twitter.com/ShaunYearStrong">Shaun Dillon</a>. Built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub pages</a>. The source code for this site can be viewed on <a href="https://github.com/ShaunYearStrong/ShaunYearStrong.github.io">GitHub</a>. All views are my own.</p>
+    </div>
+  </div>
+</footer>

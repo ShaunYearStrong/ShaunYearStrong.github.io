@@ -13,17 +13,9 @@
 <body>
 
   <div class="wrap">
-    <header role="banner">
-      <div class="container">
-      <h1 class="title"><a href="/">Shaun Dillon</a></h1>
-        <nav role="navigation" class="clearfix">
-          <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="http://codepen.io/ShaunYearStrong">my experiments</a></li>
-          </ul>  
-        </nav>
-      </div>
-    </header>
+  
+    {% include header.html %}
+
     <div class="container site">
       <main role="main" class="site__body">
         {{ content }} 
@@ -32,7 +24,7 @@
       <div class="sidebar">
         <div class="author">
           <p class="author__description">
-            I'm Shaun, a 25 year old front-end developer from London, UK. Here you'll find my thoughts, experiments and case studies.
+            I'm Shaun, a 25 year old <span class="red">front-end developer</span> from London, UK. Here you'll find my thoughts, experiments and case studies.
           </p>
         </div>
         <div class="social-links">
@@ -46,28 +38,9 @@
       </div>
     </div>
 
-    <footer role="contentinfo">
-      <div class="container">
-        <div class="footer__contact">
-          <p>
-            Shaun Dillon<br />
-            Front end developer<br />
-            <a href="mailto:shaun@shaundillon.info">shaun@shaundillon.info</a>
-          </p>
-        </div>
-        <div class="footer__contact">
-          <p>
-            <a href="https://github.com/ShaunYearStrong">github.com/ShaunYearStrong</a><br />
-            <a href="https://twitter.com/ShaunYearStrong">twitter.com/ShaunYearStrong</a><br />
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="footer__credit">
-          <p>&copy; {{ site.time | date: '%Y' }} <a href="https://twitter.com/ShaunYearStrong">Shaun Dillon</a>. Built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub pages</a>. The source code for this site can be viewed on <a href="https://github.com/ShaunYearStrong/ShaunYearStrong.github.io">GitHub</a>.</p>
-        </div>
-      </div>
-    </footer>
+  {% include footer.html %}
+
+
   </div>
 
 </body>

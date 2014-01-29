@@ -1,0 +1,44 @@
+.posts__archive {
+	border-top: 1px solid $border-grey;
+}
+
+.archive__post {
+	border-bottom: 1px solid $border-grey;
+
+	a {
+		display: block;
+		overflow:hidden;
+		@include rem(padding, 3.5rem 2rem);
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+
+		.post__title {
+			color: $dark-grey;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+		}
+
+		.post__excerpt {
+			color: $dark-grey;
+		}
+
+		.post__date {
+			color: $blue;
+			margin-bottom: 0;
+			@include rem(font-size, 1.4rem);
+		}
+
+		&:hover {
+			background: $light-grey;
+
+
+			h2{
+				color: $red;
+			}
+		}
+	}
+}
