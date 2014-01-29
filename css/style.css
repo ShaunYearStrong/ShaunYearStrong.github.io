@@ -168,12 +168,17 @@ strong {
 }
 
 a {
-  color: #02364d;
+  color: #9f392b;
   text-decoration: none;
+  font-weight: 600;
 }
 
 p {
   line-height: 1.4;
+}
+p a:hover {
+  background: #9f392b;
+  color: white;
 }
 
 * {
@@ -244,7 +249,7 @@ img {
 
 .sidebar {
   width: 30%;
-  left: 5%;
+  margin-left: 5%;
 }
 
 .clearfix:before,
@@ -408,11 +413,66 @@ header nav li:hover a {
   text-align: center;
 }
 .sidebar .social-links li:hover {
-  border: 2px solid #dcdbc7;
+  border: 2px solid #02364d;
   background: #9f392b;
 }
 .sidebar .social-links li:hover a {
   color: white;
+}
+
+footer {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 40px;
+  /* 9 */
+  margin-top: 4rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 5 */
+  padding: 20px 0;
+  /* 9 */
+  padding: 2rem 0;
+  /* 9 */
+  border-top: 1px solid #02364d;
+}
+footer .footer__contact {
+  width: 47.5%;
+  float: left;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 20px;
+  /* 9 */
+  margin-bottom: 2rem;
+  /* 9 */
+}
+footer .footer__contact:first-child {
+  margin-right: 5%;
+}
+footer .footer__credit {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 10px;
+  /* 9 */
+  font-size: 1rem;
+  /* 9 */
 }
 
 .highlight {
