@@ -13,6 +13,11 @@
 
     ul {
       text-align: justify;
+      
+      @media #{$mama-bear} {
+        text-align: left;
+        @include rem(margin-right, 1rem);
+      } 
 
       &:after {
         content: '';
@@ -41,7 +46,7 @@
       }
       
       &:hover {
-        border: 2px solid $blue;
+        border: 2px solid $white;
         background: $red;
 
         a {

@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    @include rem(font-size, 1.6rem);
+    @include rem(font-size, 1.8rem);
     color: $dark-grey;
     font-family: $base-font-family;
     background: #f9f9f9;

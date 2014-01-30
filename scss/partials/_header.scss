@@ -6,6 +6,11 @@ header {
     
     float: left;
     margin-bottom: 0;
+
+    @media #{$mama-bear} {
+      float: none;
+      @include rem(margin, 1rem);
+    }
     
     a{
       color: $blue;
@@ -13,15 +18,24 @@ header {
       text-decoration: none;
     }
   }
+
   nav {
     position: absolute;
     right: 0;
     bottom: 0;
 
+    @media #{$mama-bear} {
+      position: static;
+    }
+
     li {
       float: left;
       @include rem(margin-left, 2rem);
-      @include rem(padding, 1.5rem 1rem);
+
+      a {
+        display: block;
+        @include rem(padding, 1.5rem 1rem);      
+      }
 
       &:first-child {
         margin-left: 0;
