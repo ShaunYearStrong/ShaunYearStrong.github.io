@@ -14,32 +14,36 @@
     visibility: hidden; 
   }
 }
+
+.site__body, .sidebar {
+  width: 100%;
+  
+  @media #{$large} {
+    float: left; 
+  }
+  
+}
+
 .site__body {
-  width: 65%;
+  @media #{$large} {
+    width: 65%;
+  }
 }
 
 .sidebar {
-  width: 30%;
-  margin-left: 5%;
-
-  @media #{$mama-bear} {
     @include rem(margin, 0);
     @include rem(padding, 2rem 0);
     border-top: 3px solid $border-grey;
     border-bottom: 3px solid $border-grey;
+
+
+  @media #{$large} {
+    width: 30%;
+    margin-left: 5%;
   }
 
 }
 
-.site__body, .sidebar {
-  float: left; 
-
-  @media #{$mama-bear} {
-    width: 100%;
-    float: none;
-  }
-  
-}
 //Clearfix
 .clearfix:before,
     .clearfix:after,

@@ -12,19 +12,19 @@
   .social-links {
 
     ul {
-      text-align: justify;
-      
-      @media #{$mama-bear} {
         text-align: left;
         @include rem(margin-right, 1rem);
-      } 
+      
+      @media #{$large} {
+        text-align: justify;
 
-      &:after {
-        content: '';
-        width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-        @include inline-block;
+          &:after {
+            content: '';
+            width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+            @include inline-block;
+          }
+        } 
       }
-    }
 
     li {
 

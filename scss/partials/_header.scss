@@ -3,13 +3,12 @@ header {
   border-bottom: 2px solid $red;
 
   h1 {
-    
-    float: left;
-    margin-bottom: 0;
 
-    @media #{$mama-bear} {
-      float: none;
-      @include rem(margin, 1rem);
+    @include rem(margin, 1rem);
+
+    @media #{$large} {
+      float: left;
+      margin-bottom: 0;
     }
     
     a{
@@ -20,12 +19,12 @@ header {
   }
 
   nav {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: static;
 
-    @media #{$mama-bear} {
-      position: static;
+    @media #{$large} {
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
 
     li {

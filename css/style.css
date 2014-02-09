@@ -58,13 +58,13 @@ img { max-width: 100%; }
 .container { max-width: 1100px; margin-right: auto; margin-left: auto; padding-right: 20px; padding-left: 20px; position: relative; }
 .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
-.site__body { width: 65%; }
+.site__body, .sidebar { width: 100%; }
+@media only screen and (min-width: 800px) { .site__body, .sidebar { float: left; } }
 
-.sidebar { width: 30%; margin-left: 5%; }
-@media only screen and (max-width: 799px) { .sidebar { /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 8 */ margin: 0; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 0; /* 9 */ padding: 2rem 0; /* 9 */ border-top: 3px solid #e3e3e3; border-bottom: 3px solid #e3e3e3; } }
+@media only screen and (min-width: 800px) { .site__body { width: 65%; } }
 
-.site__body, .sidebar { float: left; }
-@media only screen and (max-width: 799px) { .site__body, .sidebar { width: 100%; float: none; } }
+.sidebar { /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 8 */ margin: 0; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 0; /* 9 */ padding: 2rem 0; /* 9 */ border-top: 3px solid #e3e3e3; border-bottom: 3px solid #e3e3e3; }
+@media only screen and (min-width: 800px) { .sidebar { width: 30%; margin-left: 5%; } }
 
 .clearfix:before, .clearfix:after, .row:before, .row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 
@@ -73,11 +73,11 @@ img { max-width: 100%; }
 .row, .clearfix { zoom: 1; }
 
 header { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 20px 0; /* 9 */ padding: 2rem 2rem 0; /* 9 */ border-bottom: 2px solid #9f392b; }
-header h1 { float: left; margin-bottom: 0; }
-@media only screen and (max-width: 799px) { header h1 { float: none; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 10px; /* 9 */ margin: 1rem; /* 9 */ } }
+header h1 { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 10px; /* 9 */ margin: 1rem; /* 9 */ }
+@media only screen and (min-width: 800px) { header h1 { float: left; margin-bottom: 0; } }
 header h1 a { color: #02364d; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 40px; /* 9 */ font-size: 4rem; /* 9 */ text-decoration: none; }
-header nav { position: absolute; right: 0; bottom: 0; }
-@media only screen and (max-width: 799px) { header nav { position: static; } }
+header nav { position: static; }
+@media only screen and (min-width: 800px) { header nav { position: absolute; right: 0; bottom: 0; } }
 header nav li { float: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ }
 header nav li a { display: block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 15px 10px; /* 9 */ padding: 1.5rem 1rem; /* 9 */ }
 header nav li:first-child { margin-left: 0; }
@@ -86,17 +86,18 @@ header nav li:hover a { color: white; }
 
 .sidebar .author { margin-bottom: 2rem; }
 .sidebar .author__description { font-family: "Bitter", Georgia, "Times new roman", serif; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 20px; /* 9 */ font-size: 2rem; /* 9 */ }
-.sidebar .social-links ul { text-align: justify; }
-@media only screen and (max-width: 799px) { .sidebar .social-links ul { text-align: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-right: 10px; /* 9 */ margin-right: 1rem; /* 9 */ } }
-.sidebar .social-links ul:after { content: ''; width: 100%; /* Ensures there are at least 2 lines of text, so justification works */ display: inline-block; vertical-align: baseline; zoom: 1; *display: inline; *vertical-align: auto; }
+.sidebar .social-links ul { text-align: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-right: 10px; /* 9 */ margin-right: 1rem; /* 9 */ }
+@media only screen and (min-width: 800px) { .sidebar .social-links ul { text-align: justify; }
+  .sidebar .social-links ul:after { content: ''; width: 100%; /* Ensures there are at least 2 lines of text, so justification works */ display: inline-block; vertical-align: baseline; zoom: 1; *display: inline; *vertical-align: auto; } }
 .sidebar .social-links li { display: inline-block; vertical-align: baseline; zoom: 1; *display: inline; *vertical-align: auto; width: 45px; height: 45px; border-radius: 50%; border: 2px solid #9f392b; background: white; }
 .sidebar .social-links li a { display: block; width: 100%; height: 100%; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 25px; /* 9 */ font-size: 2.5rem; /* 9 */ color: #9f392b; line-height: 41px; text-align: center; }
 .sidebar .social-links li:hover { border: 2px solid white; background: #9f392b; }
 .sidebar .social-links li:hover a { color: white; }
 
 footer { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top: 40px; /* 9 */ margin-top: 4rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 0; /* 9 */ padding: 2rem 0; /* 9 */ border-top: 1px solid #02364d; }
-footer .footer__contact { width: 47.5%; float: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 20px; /* 9 */ margin-bottom: 2rem; /* 9 */ }
-footer .footer__contact:first-child { margin-right: 5%; }
+footer .footer__contact { width: 100%; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 15px; /* 9 */ margin-bottom: 1.5rem; /* 9 */ }
+@media only screen and (min-width: 555px) { footer .footer__contact { width: 47.5%; float: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 20px; /* 9 */ margin-bottom: 2rem; /* 9 */ }
+  footer .footer__contact:first-child { margin-right: 5%; } }
 footer .footer__credit { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 10px; /* 9 */ font-size: 1rem; /* 9 */ }
 
 .posts__archive { border-top: 1px solid #e3e3e3; }
@@ -288,25 +289,43 @@ footer .footer__credit { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-si
 .highlight .il { color: #009999; }
 
 /* Literal.Number.Integer.Long */
-@font-face { font-family: 'icon-font'; src: url("/fonts/icon-font.eot?96247379"); src: url("/fonts/icon-font.eot?96247379#iefix") format("embedded-opentype"), url("/fonts/icon-font.woff?96247379") format("woff"), url("/fonts/icon-font.ttf?96247379") format("truetype"), url("/fonts/icon-font.svg?96247379#icon-font") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'icon-font'; src: url("/fonts/icon-font.eot?93329490"); src: url("/fonts/icon-font.eot?93329490#iefix") format("embedded-opentype"), url("/fonts/icon-font.woff?93329490") format("woff"), url("/fonts/icon-font.ttf?93329490") format("truetype"), url("/fonts/icon-font.svg?93329490#icon-font") format("svg"); font-weight: normal; font-style: normal; }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family: 'icon-font'; src: url('../font/icon-font.svg?96247379#icon-font') format('svg'); }
+@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family: 'icon-font'; src: url('../font/icon-font.svg?93329490#icon-font') format('svg'); }
 }
 */
 [class^="icon-"]:before, [class*=" icon-"]:before { font-family: "icon-font"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Animation center compensation - margins should be symmetric */ /* remove if not needed */ margin-left: .2em; /* you can be more comfortable with increased icons size */ /* font-size: 120%; */ /* Uncomment for 3D effect */ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-.icon-github:before { content: '\e803'; }
+.icon-menu-1:before { content: '\e809'; }
 
-/* '' */
-.icon-twitter:before { content: '\e800'; }
+/* '' */
+.icon-github-1:before { content: '\e805'; }
+
+/* '' */
+.icon-gplus:before { content: '\e808'; }
+
+/* '' */
+.icon-linkedin-1:before { content: '\e806'; }
+
+/* '' */
+.icon-twitter-1:before { content: '\e807'; }
+
+/* '' */
+.icon-menu:before { content: '\e804'; }
+
+/* '' */
+.icon-github:before { content: '\e800'; }
 
 /* '' */
-.icon-gplus:before { content: '\e801'; }
-
-/* '' */
-.icon-linkedin:before { content: '\e802'; }
+.icon-twitter:before { content: '\e802'; }
 
 /* '' */
+.icon-facebook:before { content: '\e801'; }
+
+/* '' */
+.icon-linkedin:before { content: '\e803'; }
+
+/* '' */
