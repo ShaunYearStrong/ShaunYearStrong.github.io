@@ -20,6 +20,7 @@
 			-moz-transition: all 0.2s ease-out;
 			-o-transition: all 0.2s ease-out;
 			transition: all 0.2s ease-out;
+      margin: 0;
 		}
 
 		.post__excerpt {
@@ -41,4 +42,43 @@
 			}
 		}
 	}
+}
+
+//Main post page
+.post__main {
+  .post__title {
+    margin: 0;
+    @include rem(font-size, 5rem);
+  }
+
+  .post__meta {
+    color: $blue;
+    @include rem(font-size, 1.4rem);   
+    font-style: italic;
+  }
+
+  .post__excerpt {
+    @include rem(font-size, 3rem);
+    color: $blue;
+  }
+
+  .post__body {
+
+    ul {
+      @include rem(margin-bottom, 2rem);
+
+      li {
+        list-style-type: disc;
+        line-height: $base-line-height;
+        @include rem(margin-left, 2rem);
+      }
+    }
+  }
+
+  .post__signature {
+    @include rem(font-size, 2rem);
+    font-family: $header-font-family;
+    color: $red;
+  }
+
 }

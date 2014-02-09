@@ -104,11 +104,18 @@ footer .footer__credit { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-si
 
 .archive__post { border-bottom: 1px solid #e3e3e3; }
 .archive__post a { display: block; overflow: hidden; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 35px 20px; /* 9 */ padding: 3.5rem 2rem; /* 9 */ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
-.archive__post a .post__title { color: #231f20; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
+.archive__post a .post__title { color: #231f20; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; margin: 0; }
 .archive__post a .post__excerpt { color: #231f20; }
 .archive__post a .post__date { color: #02364d; margin-bottom: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 14px; /* 9 */ font-size: 1.4rem; /* 9 */ }
 .archive__post a:hover { background: #f1f1f1; }
 .archive__post a:hover h2 { color: #9f392b; }
+
+.post__main .post__title { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ }
+.post__main .post__meta { color: #02364d; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 14px; /* 9 */ font-size: 1.4rem; /* 9 */ font-style: italic; }
+.post__main .post__excerpt { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 30px; /* 9 */ font-size: 3rem; /* 9 */ color: #02364d; }
+.post__main .post__body ul { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 20px; /* 9 */ margin-bottom: 2rem; /* 9 */ }
+.post__main .post__body ul li { list-style-type: disc; line-height: 1.4; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ }
+.post__main .post__signature { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 20px; /* 9 */ font-size: 2rem; /* 9 */ font-family: "Bitter", Georgia, "Times new roman", serif; color: #9f392b; }
 
 .highlight { background: #ffffff; }
 
