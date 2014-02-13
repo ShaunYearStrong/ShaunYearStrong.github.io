@@ -76,7 +76,8 @@
   }
 
   .post__signature {
-    @include rem(font-size, 2rem);
+    @include rem(font-size, 4rem);
+    font-style: italic;
     font-family: $header-font-family;
     color: $red;
   }

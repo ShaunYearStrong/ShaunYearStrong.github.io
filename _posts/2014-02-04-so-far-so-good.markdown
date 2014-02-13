@@ -2,7 +2,8 @@
 layout: post
 title:  "So far, so good"
 date:   2014-02-04 09:00
-categories: personal jekyll
+categories: personal
+tags: jekyll
 ---
 <p class="post__excerpt">The trials and tribulations of running your own website - One week on.</p>
 

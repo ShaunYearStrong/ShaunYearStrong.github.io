@@ -61,3 +61,12 @@ p {
   }
 }
 
+pre {
+  line-height: $base-line-height;
+  font-family: monospace;
+  @include rem(margin-bottom, 2rem); 
+  @include rem(padding, 1.5rem);
+  background: #f5f5f5;
+  border: 1px solid $border-grey;
+  overflow: auto;
+}

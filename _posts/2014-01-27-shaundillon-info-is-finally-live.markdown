@@ -2,7 +2,8 @@
 layout: post
 title:  "ShaunDillon.info is finally live!"
 date:   2014-01-27 20:55
-categories: personal jekyll
+categories: personal
+tags: jekyll
 ---
 <p class="post__excerpt">You are your worst client.</p>
 
