@@ -23,7 +23,6 @@ This site is built on [Jekyll][jekyll] and hosted on [GitHub pages][github-pages
 
 <p class="post__signature">S.</p>
 
-[shaundillon-screenshot]: 
 [jekyll]: http://jekyllrb.com/
 [github-pages]: http://pages.github.com/
 [andy-taylor]: http://andytaylor.me/
