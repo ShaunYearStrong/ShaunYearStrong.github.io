@@ -13,24 +13,74 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 { 
-  @include rem(font-size, 3.6rem); 
+  @include rem(font-size, 2.8rem); 
 }
 
 h2 { 
-  @include rem(font-size, 3rem);
+  @include rem(font-size, 2.4rem);
 }
 
 h3 { 
-  @include rem(font-size, 2.8rem);
+  @include rem(font-size, 2rem);
 }
 h4 { 
-  @include rem(font-size, 2.6rem);
+  @include rem(font-size, 1.8rem);
 }
 h5 { 
-  @include rem(font-size, 2.4rem);
+  @include rem(font-size, 1.4rem);
 }
 h6 { 
-  @include rem(font-size, 2.2rem);
+  @include rem(font-size, 1.2rem);
+}
+
+@media #{$medium} {
+
+  h1 { 
+    @include rem(font-size, 3rem); 
+  }
+
+  h2 { 
+    @include rem(font-size, 2.8rem);
+  }
+
+  h3 { 
+    @include rem(font-size, 2.4rem);
+  }
+  h4 { 
+    @include rem(font-size, 2rem);
+  }
+  h5 { 
+    @include rem(font-size, 1.8rem);
+  }
+  h6 { 
+    @include rem(font-size, 1.4rem);
+  }
+
+}
+
+@media #{$large} {
+
+  h1 { 
+    @include rem(font-size, 3.6rem); 
+  }
+
+  h2 { 
+    @include rem(font-size, 3rem);
+  }
+
+  h3 { 
+    @include rem(font-size, 2.6rem);
+  }
+  h4 { 
+    @include rem(font-size, 2.2rem);
+  }
+  h5 { 
+    @include rem(font-size, 2rem);
+  }
+  h6 { 
+    @include rem(font-size, 1.8rem);
+  }
+
 }
 
 em { 
@@ -50,7 +100,15 @@ a {
 
 p {
   line-height: $base-line-height;
+  @include rem(font-size, 1.4rem);
 
+  @media #{$medium} {
+    @include rem(font-size, 1.6rem);
+  }
+
+  @media #{$large} {
+    @include rem(font-size, 1.8rem);
+  }
   a {
 
     &:hover {
@@ -61,13 +119,37 @@ p {
   }
 }
 
-pre {
-  line-height: $base-line-height;
-  font-family: monospace;
+figure, pre {
+
   @include rem(margin-bottom, 2rem); 
   @include rem(padding, 1.5rem);
   background: #f5f5f5;
-  border: 1px solid $border-grey;
+  border: 1px solid $border-grey; 
+  
+  img {
+    border: 1px solid $border-grey;
+  }
+
+}
+
+figcaption {
+  text-align: center;
+  font-family: $header-font-family;
+  color: $blue;
+  @include rem(margin-top, 1.5rem);
+  font-style: italic;
+  @include rem(font-size, 1.2rem);
+
+  @media #{$medium} {
+    @include rem(font-size, 1.4rem);
+  }
+
+
+}
+
+pre {
+  line-height: $base-line-height;
+  font-family: monospace;
   overflow: auto;
 }
 
