@@ -1,0 +1,127 @@
+// Main nav - Thanks to http://codepen.io/pedrocampos/pen/gufrx for the icon animations
+header {
+
+  nav {
+
+    display:none !important; //For now, let's hide this until I get time to sort it.
+
+    $nav-width: 25px;
+    $nav-height: 25px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include inline-block;
+    width: $nav-width;
+    height: $nav-height;
+    @include rem(margin, 1rem);
+
+    &:hover {
+      background: #f1f1f1;
+    }
+    
+    span, span:before, span:after {
+      width: $nav-width;
+      height: 5px;
+      background-color: $red;
+      display: block;
+    }
+
+    span {
+
+      margin: 0 auto;
+      position: relative;
+      top: 10px;
+      -webkit-transition-duration: 0s;
+      transition-duration: 0s;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+
+      &:before, &:after {
+        position: absolute;
+        content: '';
+      }
+
+      &:before {
+        margin-top: -10px;
+        -webkit-transition-property: margin, -webkit-transform;
+        -webkit-transition-duration: .2s;
+        -webkit-transition-delay: .2s, 0;
+        transition-property: margin, -webkit-transform;
+        transition-duration: .2s;
+        transition-delay: .2s, 0;
+      }
+
+      &:after {
+        margin-top: 10px;
+        -webkit-transition-property: margin, -webkit-transform;
+        -webkit-transition-duration: .2s;
+        -webkit-transition-delay: .2s, 0;
+        transition-property: margin, -webkit-transform;
+        transition-duration: .2s;
+        transition-delay: .2s, 0;
+      }
+    }
+    
+    &.active {
+      span {
+        background-color: rgba(0,0,0,0.0);
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+
+        &:before {
+          margin-top: 0;
+          -webkit-transform: rotate(45deg);
+          -webkit-transition-delay: 0, .2s;
+          transform: rotate(45deg);
+          transition-delay: 0, .2s;
+        }
+
+        &:after {
+          margin-top: 0;
+          -webkit-transform: rotate(-45deg);
+          -webkit-transition-delay: 0, .2s;
+          transform: rotate(-45deg);
+          transition-delay: 0, .2s;
+        }
+      }
+    }
+
+    @media #{$large} {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      ul {
+        display: block;
+      }
+
+    }
+
+    ul {
+      // display: none;
+    }
+
+    li {
+      float: left;
+      @include rem(margin-left, 2rem);
+
+      a {
+        display: block;
+        @include rem(padding, 1.5rem 1rem);      
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background: $blue;
+
+        a {
+          color: $white;
+        }
+      }      
+    }
+  }
+}

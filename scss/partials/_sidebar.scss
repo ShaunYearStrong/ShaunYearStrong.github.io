@@ -6,7 +6,11 @@
 
   .author__description {
     font-family: $header-font-family;
-    @include rem(font-size, 2rem);
+    @include rem(font-size, 1.5rem);
+
+    @media #{$medium} {
+      @include rem(font-size, 2rem);
+    }
   }
 
   .social-links {

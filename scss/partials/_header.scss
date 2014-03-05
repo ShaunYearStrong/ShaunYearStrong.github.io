@@ -1,6 +1,9 @@
 header {
-  @include rem(padding, 2rem 2rem 0);
   border-bottom: 2px solid $red;
+
+  @media #{$medium} {
+    @include rem(padding, 2rem 2rem 0);
+  }
 
   h1 {
 
@@ -15,38 +18,6 @@ header {
       color: $blue;
       @include rem(font-size, 4rem);
       text-decoration: none;
-    }
-  }
-
-  nav {
-    position: static;
-
-    @media #{$large} {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-
-    li {
-      float: left;
-      @include rem(margin-left, 2rem);
-
-      a {
-        display: block;
-        @include rem(padding, 1.5rem 1rem);      
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:hover {
-        background: $blue;
-
-        a {
-          color: $white;
-        }
-      }      
     }
   }
 }
