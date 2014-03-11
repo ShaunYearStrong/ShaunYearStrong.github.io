@@ -24,22 +24,9 @@
       <main role="main" class="site__body">
         {{ content }} 
       </main>
+      
+      {% include sidebar.html %}
 
-      <div class="sidebar">
-        <div class="author">
-          <p class="author__description">
-            I'm Shaun, a 25 year old <span class="red">front-end developer</span> from London, UK. Here you'll find my thoughts, experiments and case studies.
-          </p>
-        </div>
-        <div class="social-links">
-          <ul>
-            <li class="social-links__twitter"><a title="Twitter" href="https://twitter.com/ShaunYearStrong" class="icon-twitter"></a></li>
-            <li class="social-links__github"><a title="GitHub" href="https://github.com/ShaunYearStrong" class="icon-github"></a></li>
-            <li class="social-links__google"><a title="Google+" href="https://plus.google.com/+ShaunDillon" class="icon-gplus"></a></li>
-            <li class="social-links__linkedin"><a title="LinkedIn" href="https://uk.linkedin.com/" class="icon-linkedin"></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
   {% include footer.html %}

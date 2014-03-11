@@ -27,6 +27,10 @@
             width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
             @include inline-block;
           }
+
+          .post & {
+            text-align: left;
+          }
         } 
       }
 

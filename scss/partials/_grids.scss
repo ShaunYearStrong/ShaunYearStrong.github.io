@@ -23,6 +23,11 @@
   
   @media #{$large} {
     float: left; 
+
+    .post & {
+      float: none;
+      margin: 0 auto;
+    }
   }
   
 }
@@ -45,6 +50,10 @@
   @media #{$large} {
     width: 30%;
     margin-left: 5%;
+
+    .post & {
+      width: auto;
+    }
   }
 
 }
