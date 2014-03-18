@@ -1,5 +1,9 @@
 .sidebar {
 
+  @media #{$medium} {
+    @include rem(margin-top, 2rem);
+  }
+ 
   .author {
     margin-bottom: 2rem;
   }

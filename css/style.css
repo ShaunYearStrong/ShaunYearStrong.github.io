@@ -123,6 +123,7 @@ header .main-navigation__container li { border-top: 1px solid #9f392b; text-alig
 header .main-navigation__container li:first-child { border: 0; }
 header .main-navigation__container li a { color: white; display: block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 15px 0; /* 9 */ padding: 1.5rem 0; /* 9 */ }
 
+@media only screen and (min-width: 555px) { .sidebar { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top: 20px; /* 9 */ margin-top: 2rem; /* 9 */ } }
 .sidebar .author { margin-bottom: 2rem; }
 .sidebar .author__description { font-family: "Bitter", Georgia, "Times new roman", serif; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ }
 @media only screen and (min-width: 555px) { .sidebar .author__description { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 20px; /* 9 */ font-size: 2rem; /* 9 */ } }
