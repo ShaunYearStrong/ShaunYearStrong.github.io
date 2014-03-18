@@ -1,9 +1,5 @@
 header {
-  border-bottom: 2px solid $red;
-
-  @media #{$medium} {
-    @include rem(padding, 2rem 2rem 0);
-  }
+  
 
   h1 {
 
@@ -16,8 +12,12 @@ header {
     
     a{
       color: $blue;
-      @include rem(font-size, 4rem);
+      @include rem(font-size, 3rem);
       text-decoration: none;
+
+      @media #{$medium} {
+        @include rem(font-size, 4rem);
+      }
     }
   }
 }

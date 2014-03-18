@@ -1,16 +1,17 @@
 // Main nav - Thanks to http://codepen.io/pedrocampos/pen/gufrx for the icon animations
 header {
+  position: relative;
 
-  nav {
+  .navigation-icon {
 
-    display:none !important; //For now, let's hide this until I get time to sort it.
 
     $nav-width: 25px;
     $nav-height: 25px;
 
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 0;
+    cursor: pointer;
     @include inline-block;
     width: $nav-width;
     height: $nav-height;
@@ -86,42 +87,36 @@ header {
         }
       }
     }
+  }
 
-    @media #{$large} {
-      position: absolute;
-      right: 0;
-      bottom: 0;
+  nav {
+    background: $blue;
+    width: 100%;
+    border-bottom: 2px solid $red;
+    @include rem(margin-top, 2rem);
+  }  
 
-      ul {
-        display: block;
-      }
+  .main-navigation__container {
+    display: none;
 
+    &.active {
+      display: block;
     }
 
-    ul {
-      // display: none;
-    }
-
-    li {
-      float: left;
-      @include rem(margin-left, 2rem);
-
-      a {
-        display: block;
-        @include rem(padding, 1.5rem 1rem);      
-      }
+    li {      
+      border-top: 1px solid $red;
+      text-align: center;
 
       &:first-child {
-        margin-left: 0;
+        border: 0;
       }
 
-      &:hover {
-        background: $blue;
-
-        a {
-          color: $white;
-        }
-      }      
-    }
+      a {
+        color: $white;
+        display: block;
+        @include rem(padding, 1.5rem 0);
+      }
+    }  
   }
+
 }
