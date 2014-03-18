@@ -114,6 +114,7 @@ p {
     &:hover {
       background: $red;
       color: $white;
+      outline: 2px solid $red;
     }
 
   }

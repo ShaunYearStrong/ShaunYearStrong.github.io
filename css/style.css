@@ -56,7 +56,7 @@ a { color: #9f392b; text-decoration: none; font-weight: 600; }
 p { line-height: 1.4; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 14px; /* 9 */ font-size: 1.4rem; /* 9 */ }
 @media only screen and (min-width: 555px) { p { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 16px; /* 9 */ font-size: 1.6rem; /* 9 */ } }
 @media only screen and (min-width: 800px) { p { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 18px; /* 9 */ font-size: 1.8rem; /* 9 */ } }
-p a:hover { background: #9f392b; color: white; }
+p a:hover { background: #9f392b; color: white; outline: 2px solid #9f392b; }
 
 figure, pre { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 20px; /* 9 */ margin-bottom: 2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 15px; /* 9 */ padding: 1.5rem; /* 9 */ background: #f5f5f5; border: 1px solid #e3e3e3; }
 figure img, pre img { border: 1px solid #e3e3e3; }
