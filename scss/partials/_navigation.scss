@@ -17,9 +17,6 @@ header {
     height: $nav-height;
     @include rem(margin, 1rem);
 
-    &:hover {
-      background: #f1f1f1;
-    }
     
     span, span:before, span:after {
       width: $nav-width;

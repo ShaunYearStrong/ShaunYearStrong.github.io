@@ -107,7 +107,6 @@ header h1 a { color: #02364d; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ fo
 
 header { position: relative; }
 header .navigation-icon { position: absolute; right: 10px; bottom: 0; cursor: pointer; display: inline-block; vertical-align: baseline; zoom: 1; *display: inline; *vertical-align: auto; width: 25px; height: 25px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 10px; /* 9 */ margin: 1rem; /* 9 */ }
-header .navigation-icon:hover { background: #f1f1f1; }
 header .navigation-icon span, header .navigation-icon span:before, header .navigation-icon span:after { width: 25px; height: 5px; background-color: #9f392b; display: block; }
 header .navigation-icon span { margin: 0 auto; position: relative; top: 10px; -webkit-transition-duration: 0s; transition-duration: 0s; -webkit-transition-delay: .2s; transition-delay: .2s; }
 header .navigation-icon span:before, header .navigation-icon span:after { position: absolute; content: ''; }
