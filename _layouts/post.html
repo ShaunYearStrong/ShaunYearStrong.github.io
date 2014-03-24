@@ -5,15 +5,17 @@ excerpt_separator: .
 
     <div class="container site post">
     <main role="main" class="site__body">
-
-        <div class="post__main">
-		  <h2 class="post__title">{{ page.title }}</h2>
-		  <p class="post__meta">- {{ page.date | date: "%-d %B %Y" }}</p>
+      
+        <article class="post__main">
+        <header>
+		      <h1 class="post__title">{{ page.title }}</h1>
+		      <p class="post__meta">Published - <time pubdate="pubdate">{{ page.date | date: "%-d %B %Y" }}</time></p>
+      </header>
 
           <div class="post__body">
             {{ content }}
           </div>
-        </div>
+        </article>
     </main>
       
       {% include sidebar.html %}

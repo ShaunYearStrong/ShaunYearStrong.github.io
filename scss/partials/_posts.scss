@@ -63,6 +63,21 @@
     }
   }
 
+  section {
+    &:after {
+      content: "";
+      display: block;
+      @include rem(margin, 3rem auto);
+      width: 50%;
+      height: 1px;
+      background: $grey;
+
+    }
+    &>h2 {
+      line-height: 1;
+    }
+  }
+
   .post__meta {
     color: $teal;
     @include rem(font-size, 1.2rem);   

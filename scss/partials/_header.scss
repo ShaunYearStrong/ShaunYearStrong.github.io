@@ -1,4 +1,4 @@
-header {
+.site-header {
   
 
   h1 {
@@ -7,7 +7,6 @@ header {
 
     @media #{$large} {
       float: left;
-      margin-bottom: 0;
     }
     
     a{
