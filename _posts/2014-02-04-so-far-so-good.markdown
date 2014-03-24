@@ -9,6 +9,7 @@ tags: jekyll
 <p class="post__excerpt">The trials and tribulations of running your own website - One week on.</p>
 
 <section>
+
 Today officially marks one week since I finally got a site live [after years of thinking about it][first-post-link].
 
 Here's what I've learned so far:
@@ -24,6 +25,7 @@ I've found that as it's my site, I'm not afriad of experimenting, trying new thi
 These are all points that weren't too apparent to me coming in to making my site, but it seems the downsides of working for yourself can also been seen as upsides.
 
 Here's to another week.
+
 </section>
 <p class="post__signature">S.</p>
 
