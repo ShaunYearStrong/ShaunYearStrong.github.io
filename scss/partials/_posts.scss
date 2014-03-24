@@ -1,9 +1,9 @@
 .posts__archive {
-	border-top: 1px solid $border-grey;
+	border-top: 1px solid $grey;
 }
 
 .archive__post {
-	border-bottom: 1px solid $border-grey;
+	border-bottom: 1px solid $grey;
 
 	a {
 		display: block;
@@ -28,7 +28,7 @@
 		}
 
 		.post__date {
-			color: $blue;
+			color: $teal;
 			margin-bottom: 0;
 			@include rem(font-size, 1.4rem);
 		}
@@ -38,7 +38,7 @@
 
 
 			h2{
-				color: $red;
+				color: $black;
 			}
 		}
     
@@ -64,7 +64,7 @@
   }
 
   .post__meta {
-    color: $blue;
+    color: $teal;
     @include rem(font-size, 1.2rem);   
     font-style: italic;
 
@@ -76,7 +76,7 @@
 
   .post__excerpt {
     @include rem(font-size, 2rem);
-    color: $blue;
+    color: $teal;
 
     @media #{$medium} {
       @include rem(font-size, 2.5rem);
@@ -112,8 +112,8 @@
   .post__signature {
     @include rem(font-size, 2.5rem);
     font-style: italic;
-    font-family: $header-font-family;
-    color: $red;
+    font-family: $base-font-family;
+    color: $teal;
 
     @media #{$medium} {
       @include rem(font-size, 3.5rem);

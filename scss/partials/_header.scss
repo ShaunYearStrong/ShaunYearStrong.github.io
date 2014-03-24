@@ -11,9 +11,13 @@ header {
     }
     
     a{
-      color: $blue;
+      color: $text-black;
       @include rem(font-size, 3rem);
       text-decoration: none;
+      
+      span {
+        color: $teal;
+      }
 
       @media #{$medium} {
         @include rem(font-size, 4rem);

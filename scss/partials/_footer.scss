@@ -1,7 +1,7 @@
 footer {
   @include rem(margin-top, 4rem);
   @include rem(padding, 2rem 0);
-  border-top: 1px solid $blue;
+  border-top: 1px solid $teal;
 
   .footer__contact {
     width: 100%;

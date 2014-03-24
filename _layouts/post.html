@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Shaun Dillon | Front end developer
 excerpt_separator: .
 --- 
 
@@ -8,10 +7,15 @@ excerpt_separator: .
     <main role="main" class="site__body">
 
         <div class="post__main">
-          <h2 class="post__title">{{ page.title }}</h2>
-          <p class="post__meta">- {{ page.date | date: "%-d %B %Y" }}</p>
+		  <h2 class="post__title">{{ page.title }}</h2>
+		  <p class="post__meta">- {{ page.date | date: "%-d %B %Y" }}</p>
 
           <div class="post__body">
             {{ content }}
           </div>
         </div>
+    </main>
+      
+      {% include sidebar.html %}
+
+    </div>    

@@ -1,9 +1,12 @@
 $dark-grey: #231F20;
-$blue: #02364D;
-$red: #9F392B;
-$brown: #DCDBC7;
 $white: #FFFFFF;
-$black: #111111;
-$light-grey: #f1f1f1;
-$border-grey: #e3e3e3;
+$black: #333333;
+$text-black: lighten($black, 30%);
+$grey: #e3e3e3;
+$light-grey: #e9e9e9;
+$dark-grey: darken($grey, 30%);
+$teal: #04B790;
+$light-teal: lighten($teal, 20%);
+$dark-teal: darken($teal, 20%);
+
 

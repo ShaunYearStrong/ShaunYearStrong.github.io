@@ -43,8 +43,8 @@
 .sidebar {
     @include rem(margin, 0);
     @include rem(padding, 2rem 0);
-    border-top: 3px solid $border-grey;
-    border-bottom: 3px solid $border-grey;
+    border-top: 3px solid $grey;
+    border-bottom: 3px solid $grey;
 
 
   @media #{$large} {

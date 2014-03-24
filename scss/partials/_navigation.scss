@@ -21,7 +21,7 @@ header {
     span, span:before, span:after {
       width: $nav-width;
       height: 5px;
-      background-color: $red;
+      background-color: $teal;
       display: block;
     }
 
@@ -87,10 +87,9 @@ header {
   }
 
   nav {
-    background: $blue;
+    background: $grey;
     width: 100%;
-    border-bottom: 2px solid $red;
-    @include rem(margin-top, 2rem);
+    border-bottom: 2px solid $dark-grey;
   }  
 
   .main-navigation__container {
@@ -101,7 +100,7 @@ header {
     }
 
     li {      
-      border-top: 1px solid $red;
+      border-top: 1px solid $dark-grey;
       text-align: center;
 
       &:first-child {
@@ -109,7 +108,7 @@ header {
       }
 
       a {
-        color: $white;
+        color: $text-black;
         display: block;
         @include rem(padding, 1.5rem 0);
       }

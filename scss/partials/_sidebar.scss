@@ -9,7 +9,7 @@
   }
 
   .author__description {
-    font-family: $header-font-family;
+    font-family: $base-font-family;
     @include rem(font-size, 1.5rem);
 
     @media #{$medium} {
@@ -44,22 +44,23 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      border: 2px solid $red;
+      border: 2px solid $dark-grey;
       background: $white;
+      transition: background 0.2s; 
 
       a {
         display:block;
         width:100%;
         height:100%;
         @include rem(font-size, 2.5rem);
-        color: $red;
+        color: $dark-grey;
         line-height: 41px;
         text-align: center
       }
       
       &:hover {
         border: 2px solid $white;
-        background: $red;
+        background: $dark-grey;
 
         a {
           color: $white;
