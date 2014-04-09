@@ -91,7 +91,7 @@ header {
   }
 
   nav {
-    background: $grey;
+    background: $light-teal;
     width: 100%;
     border-bottom: 2px solid $dark-grey;
   }  
@@ -104,7 +104,7 @@ header {
     }
 
     li {      
-      border-top: 1px solid $dark-grey;
+      border-top: 1px solid $white;
       text-align: center;
 
       &:first-child {
@@ -112,7 +112,7 @@ header {
       }
 
       a {
-        color: $text-black;
+        color: $white;
         display: block;
         @include rem(padding, 1.5rem 0);
       }
