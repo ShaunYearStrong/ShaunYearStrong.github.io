@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Pet projects"
+date:   2014-04-28 12:30
+categories: personal
+tags: personal
+---
+<p class="post__excerpt">I've finally taken some on, here's what I've learned so far.</p>
+
+<section>
+
+As I’ve become increasingly frustrated with the lack of challenges at my current job, I’ve been looking elsewhere for them, namely, pet projects.
+
+Now, you may be saying “Why don’t you just find a new job?” well, I have, but that was a long process and I needed my fill as soon as possible.
+
+So, in the short term I’ve created/collaborated on a few projects and it’s been a huge breath of fresh air. 
+Not only am I pushing in all the areas I want, but I’m being given proper freedom to work on something that I feel motivated to work on, this is something I haven’t felt in a long time.
+
+These projects will trickle out as and when I finish them, the closest to release being [Léon Ipsum]( http://www.leonipsum.com/ " Léon Ipsum").
+
+I’ve had a huge amount of fun working on the few I have now, and I’m always looking for more, so [contact me]( mailto:shaun@shaundillon.info "contact me") if you’ve got something you’d like to collaborate on.
+
+</section>
+
+
+<p class="post__signature">S.</p>
+
+
+
