@@ -21,7 +21,7 @@ I've already mentioned learning Ruby in a [previous post]{% post_url 2015-01-30-
 
 I've been shopping around the various frameworks, Meteor, Backbone and so on, but the one that really stood out to me as a true solution to what I need, a native style app using the server for data only, was **EmberJS**.
 
-The thing that really sold me on it was an [episode of ShopTalk with Tom Dale](http://shoptalkshow.com/episodes/147-tom-dale/, "ShopTalk wpisode 147 with Tom Dale"). While he may be biased, his description of what EmberJS strives to achieve matches exactly what I need out of this app.
+The thing that really sold me on it was an [episode of ShopTalk with Tom Dale](http://shoptalkshow.com/episodes/147-tom-dale/, "ShopTalk episode 147 with Tom Dale"). While he may be biased, his description of what EmberJS strives to achieve matches exactly what I need out of this app.
 
 I'll keep you up to date with my experiences and examples of my solutions along the way. Exciting stuff!
 
