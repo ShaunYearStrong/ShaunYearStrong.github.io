@@ -9,7 +9,7 @@ tags: personal javascript
 
 <section>
 
-In April last year I wrote [a post]({% post_url 2014-04-28-pet-projects %}) about pet projects I planned to work on last year. Things didn't quite align for me, my day job got in the way, and I only managed to finish Leon Ipsum (which is currently with the designer while he does his thing).
+In April last year I wrote [a post]({% post_url 2014-04-28-2014-pet-projects %}) about pet projects I planned to work on last year. Things didn't quite align for me, my day job got in the way, and I only managed to finish Leon Ipsum (which is currently with the designer while he does his thing).
 
 There is an upside to my being busy at work last year, which is that I've advanced at a far faster rate than I originally though I would. This means I can really push the boundaries on the projects I take on this year.
 
