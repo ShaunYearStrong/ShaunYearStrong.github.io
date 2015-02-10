@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Pet projects v2: the return"
+date:   2015-02-10 13:00
+categories: personal javascript
+tags: personal javascript
+---
+<p class="post__excerpt">More time, more skills</p>
+
+<section>
+
+In April last year I wrote [a post]{% post_url 2014-04-28-pet-projects %} about pet projects I planned to work on last year. Things didn't quite align for me, my day job got in the way, and I only managed to finish Leon Ipsum (which is currently with the designer while he does his thing).
+
+There is an upside to my being busy at work last year, which is that I've advanced at a far faster rate than I originally though I would. This means I can really push the boundaries on the projects I take on this year.
+
+A while ago, me and my good friend [James](http://twitter.com/zerointernet) worked on a small twitter bot called Soccer Slaturday, based on the [popular Sky show of (almost) the same name](http://en.wikipedia.org/wiki/Soccer_Saturday). This was just a bit of a novelty, so we've decided to revisit it and turn it into a bonafide, live updating dashboard.
+
+James is working on providing me with an API to built my client side app on. As with any project this means choosing the right architecture to built it.
+
+I've already mentioned learning Ruby in a [previous post]{% post_url 2015-01-30-new-years-resolutions %} but as I mentioned this is a client side application and that means Javascript. I've been using AngularJS day-to-day for a few months now and, while I'm comfortable with it, it has a fair few flaws that have got me thinking of alternatives.
+
+I've been shopping around the various frameworks, Meteor, Backbone and so on, but the one that really stood out to me as a true solution to what I need, a native style app using the server for data only, was **EmberJS**.
+
+The thing that really sold me on it was an [episode of ShopTalk with Tom Dale](http://shoptalkshow.com/episodes/147-tom-dale/). While he may be biased, his description of what EmberJS strives to achieve matches exactly what I need out of this app.
+
+I'll keep you up to date with my experiences and examples of my solutions along the way. Exciting stuff!
+
+</section>
+
+
+<p class="post__signature">S.</p>
+
+
+
