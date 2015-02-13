@@ -17,9 +17,8 @@ A lot of this was down to the "designing for yourself" predicament I'm sure a lo
 So, I decided: "What if I just get it live and work on the design in increments?". I'd get to practice continuous integration, and I'd finally have a site live. So that's what I did. Now, depending on when you're reading this, it could just be a bare bones Jekyll blog or something new and exciting.
 
 <figure>
-  <img src="/img/post-images/2014/jan/2014-01-27-screenshot.png" alt="screenshot of this website with default jekyll styling" />
-  <figcaption>A look back at this site when all it consisted of was a bare bones Jekyll setup.</figcaption>
-
+    <img src="/img/post-images/2014/jan/2014-01-27-screenshot.png" alt="screenshot of this website with default jekyll styling" />
+    <figcaption>A look back at this site when all it consisted of was a bare bones Jekyll setup.</figcaption>
 </figure>
 
 This site is built on [Jekyll][jekyll] and hosted on [GitHub pages][github-pages]. I'd also like to thank [Andy Taylor][andy-taylor] as this site would not exist without his [guide on installing Jekyll on Mac OSX][jekyll-guide]. 
