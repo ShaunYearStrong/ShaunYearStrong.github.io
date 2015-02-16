@@ -17,7 +17,7 @@ A while ago, me and my good friend [James](http://twitter.com/zerointernet "Jame
 
 James is working on providing me with an API to built my client side app on. As with any project this means choosing the right architecture to built it.
 
-I've already mentioned learning Ruby in a [previous post]{% post_url 2015-01-30-new-years-resolutions %} but as I mentioned this is a client side application and that means Javascript. I've been using AngularJS day-to-day for a few months now and, while I'm comfortable with it, it has a fair few flaws that have got me thinking of alternatives.
+I've already mentioned learning Ruby in a [previous post]({% post_url 2015-01-30-new-years-resolutions %}) but as I mentioned this is a client side application and that means Javascript. I've been using AngularJS day-to-day for a few months now and, while I'm comfortable with it, it has a fair few flaws that have got me thinking of alternatives.
 
 I've been shopping around the various frameworks, Meteor, Backbone and so on, but the one that really stood out to me as a true solution to what I need, a native style app using the server for data only, was **EmberJS**.
 
