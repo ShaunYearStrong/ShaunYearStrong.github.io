@@ -2,8 +2,8 @@
 layout: post
 title:  "New year, new you (or me)"
 date:   2015-01-30 13:00
-categories: personal career
-tags: personal career
+categories: personal, career
+tags: personal, career
 ---
 <p class="post__excerpt">My aim for the year ahead</p>
 

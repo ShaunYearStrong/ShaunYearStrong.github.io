@@ -2,8 +2,8 @@
 layout: post
 title:  "Pet projects v2: the return"
 date:   2015-02-10 13:00
-categories: personal javascript
-tags: personal javascript
+categories: personal, javascript
+tags: personal, javascript
 ---
 <p class="post__excerpt">More time, more skills</p>
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "Léon Ipsum"
 date:   2015-03-18 16:00
-categories: javascript project design
-tags: javascript project design
+categories: javascript, project, design
+tags: javascript, project, design
 ---
 <p class="post__excerpt">The Professional placeholder text generator for designers</p>
 
