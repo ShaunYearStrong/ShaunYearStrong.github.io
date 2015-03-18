@@ -1,0 +1,123 @@
+---
+layout: post
+title:  "Léon Ipsum"
+date:   2015-03-18 16:00
+categories: javascript project design
+tags: javascript project design
+---
+<p class="post__excerpt">The Professional placeholder text generator for designers</p>
+
+<section>
+
+I metioned in [a post]({% post_url 2014-04-28-2014-pet-projects %}) about pet projects I planned to work on last year. Shortly afterwards I started a new job and disappeared into the abyss of the working world.
+
+Well, one of those pet projects has finally surface in the form of [Léon Ipsum](http://www.leonipsum.com), *the professional* placeholder text generator.
+
+This is the result of a collaboration between myself and my good friend [Ed Fairman](http://eabfairman.com/), with him taking on the design and me handling the magic.
+
+<figure>
+    <img src="/img/post-images/2015/march/2015-03-18-screenshot.png" alt="Screenshot of a website that generates text based on quotes from the movie Léon" />
+    <figcaption>Léon Ipsum</figcaption>
+</figure>
+
+</section>
+
+<section>
+
+## How it works
+
+Not wanting to look at how others had done it before, I took on the task of creating the actual JS that would provide the placeholder text to the user. I split the functionality into four parts:
+
+- Loading the quotes to be used into the page
+- Allowing the user to choose the number of quotes they would like
+- Shuffling and returning the required amount of quotes
+- Displaying the text
+
+### Loading the quotes
+
+Ed provided me with a set of quotes that he wanted to use in the site, in order to seperate these from the main functionality, I stored them in a seperate JSON formatted file called `quotes.json`. Which looks something like this:
+
+```json
+{
+    "leon": [
+        "I've decided what to do with my life. I wanna be a cleaner. You wanna be a cleaner? Here, take it. It's a goodbye gift. Go clean. But not with me. I work alone, understand? Alone. Bonnie and Clyde didn't work alone. Thelma and Louise didn't work alone. And they were the best.".
+        // etc
+    ]
+}
+```
+
+This is relatively straightforward, each quote is stored as a string in an array called `leon`. 
+
+To load the quotes in, I used the [jQuery.getJSON() method](http://api.jquery.com/jquery.getjson/) on `$(document).ready` and applied `leon` to a variable called `quotes` for later use.
+
+## Choosing the number of quotes
+
+Choosing the quotes is done with the "+" and "-" buttons above the generated text field. I started with a default value of 2 and set a variable `p` to a number where the value is the value of the `input` field between the buttons. 
+
+Changing this was as simple as using the [jQuery.click()](http://api.jquery.com/click/) method to bind the the click event of the buttons and incrementing (or decrementing) `p`. `p` was then used to update the value of the input.
+
+### Shuffling and returning the required amount of quotes
+
+Here's where we get into the real functionality. 
+
+I decided to shuffle the array so that random quotes would appear each time, to keep the site feeling dynamic. After doing some research, I found that the [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) was the way to go to produce an even, unbiased shuffle (see [this article](http://spin.atomicobject.com/2014/08/11/fisher-yates-shuffle-randomization-algorithm/) for more details.)
+
+And here's an integration of the shuffle in javascript:
+
+```js
+function shuffle (array) {
+    var i = array.length, j, swap;
+
+    while (--i) {
+        // Generate a random value between 1 and array.length
+        j = Math.random() * (i + 1) || 0;
+        // Get the current position in the array
+        swap = array[i];
+        // Swap them over
+        array[i] = array[j];
+        array[j] = swap;
+    }
+
+    return array;
+}
+```
+
+Relatively simple once you break it down.
+
+## Display
+
+The final piece of our puzzle, how do we get the text into the page? For this I created a function called `getQuotes()` which takes a parameter `p` (Our number of required quotes) and handles calling everything else. It looks like this:
+
+```js
+function getQuotes(p) {
+
+    var leon = [],
+        shuffled = shuffle(quotes),
+        i;
+
+    for (i = 0; i < parseInt(p); i++) {
+      leon.push('<p>' + shuffled[i] + '</p>');
+    }
+
+    return leon;
+}
+```
+
+This is called by clicking the "okay" button, which also fetches the current value of `p` and uses `jQuery.empty()` and `jQuery.html()` to populate the text box
+
+</section>
+
+<section>
+
+## Conclusions
+
+Was this the best way of going around things? Probably not, I've actually done a bit of refactoring while writing this very article, but this is a good window into my early JS skill level and it's a completed product.
+
+You can [view the source on github](https://github.com/ShaunYearStrong/leonipsum).
+
+</section>
+
+<p class="post__signature">S.</p>
+
+
+
