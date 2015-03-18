@@ -3,7 +3,7 @@ layout: post
 title:  "How I work and why"
 date:   2014-02-13 09:00
 categories: personal
-tags: jekyll, workflow, preprocessor
+tags: jekyll workflow preprocessor
 ---
 <p class="post__excerpt">It may not be perfect, but it serves a purpose.</p>
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "AngularJS"
 date:   2015-01-22 14:00
-categories: angular, javascript
-tags: angular, javascript
+categories: javascript
+tags: angular javascript
 ---
 <p class="post__excerpt">Thoughts, gripes and reflections so far</p>
 
