@@ -60,25 +60,28 @@ Changing this was as simple as using the [jQuery.click()](http://api.jquery.com/
 
 Here's where we get into the real functionality. 
 
-I decided to shuffle the array so that random quotes would appear each time, to keep the site feeling dynamic. After doing some research, I found that the [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) was the way to go to produce an even, unbiased shuffle (see [this article](http://spin.atomicobject.com/2014/08/11/fisher-yates-shuffle-randomization-algorithm/) for more details.)
+I decided to shuffle the array so that random quotes would appear each time, to keep the site feeling dynamic. After doing some research, I found that the [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) was the way to go to produce an even, unbiased shuffle (see [this article](http://bost.ocks.org/mike/shuffle/) for more details.)
 
-And here's an integration of the shuffle in javascript:
+And here's an integration of the shuffle in javascript, almost exactly lifted from the article:
 
 ```js
-function shuffle (array) {
-    var i = array.length, j, swap;
+function shuffle(array) {
+  var unshuffled = array.length,
+      copy,
+      remaining;
 
-    while (--i) {
-        // Generate a random value between 1 and array.length
-        j = Math.random() * (i + 1) || 0;
-        // Get the current position in the array
-        swap = array[i];
-        // Swap them over
-        array[i] = array[j];
-        array[j] = swap;
-    }
+  // While there are unshuffled elements
+  while (unshuffled) {
+    // Get one that hasn't been replaced yet
+    remaining = Math.floor(Math.random() * unshuffled--);
+    // And replace it with the unshuffled element
+    copy = array[unshuffled];
+    array[unshuffled] = array[remaining];
+    array[remaining] = copy;
+  }
 
-    return array;
+  return array;
+}
 }
 ```
 
