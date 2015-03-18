@@ -9,7 +9,7 @@ tags: javascript project design
 
 <section>
 
-I metioned in [a post]({% post_url 2014-04-28-2014-pet-projects %}) about pet projects I planned to work on last year. Shortly afterwards I started a new job and disappeared into the abyss of the working world.
+I mentioned in [a post]({% post_url 2014-04-28-2014-pet-projects %}) about pet projects I planned to work on last year. Shortly afterwards I started a new job and disappeared into the abyss of the working world.
 
 Well, one of those pet projects has finally surface in the form of [Léon Ipsum](http://www.leonipsum.com), *the professional* placeholder text generator.
 
@@ -35,7 +35,7 @@ Not wanting to look at how others had done it before, I took on the task of crea
 
 ### Loading the quotes
 
-Ed provided me with a set of quotes that he wanted to use in the site, in order to seperate these from the main functionality, I stored them in a seperate JSON formatted file called `quotes.json`. Which looks something like this:
+Ed provided me with a set of quotes that he wanted to use in the site, in order to separate these from the main functionality, I stored them in a separate JSON formatted file called `quotes.json`. Which looks something like this:
 
 ```json
 {
