@@ -57,7 +57,7 @@ To load the quotes in, I used the [jQuery.getJSON() method](http://api.jquery.co
 
 <section>
 
-## Choosing the number of quotes
+### Choosing the number of quotes
 
 Choosing the quotes is done with the "+" and "-" buttons above the generated text field. I started with a default value of 2 and set a variable `p` to a number where the value is the value of the `input` field between the buttons. 
 
@@ -99,7 +99,7 @@ Relatively simple once you break it down.
 
 </section>
 
-## Display
+### Display
 
 The final piece of our puzzle, how do we get the text into the page? For this I created a function called `getQuotes()` which takes a parameter `p` (Our number of required quotes) and handles calling everything else. It looks like this:
 
