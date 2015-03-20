@@ -63,6 +63,9 @@ Choosing the quotes is done with the "+" and "-" buttons above the generated tex
 
 Changing this was as simple as using the [jQuery.click()](http://api.jquery.com/click/) method to bind the the click event of the buttons and incrementing (or decrementing) `p`. `p` was then used to update the value of the input.
 
+</section>
+<section>
+
 ### Shuffling and returning the required amount of quotes
 
 Here's where we get into the real functionality. 
