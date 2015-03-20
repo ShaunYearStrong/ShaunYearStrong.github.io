@@ -33,6 +33,9 @@ Not wanting to look at how others had done it before, I took on the task of crea
 - Shuffling and returning the required amount of quotes
 - Displaying the text
 
+</section>
+<section>
+
 ### Loading the quotes
 
 Ed provided me with a set of quotes that he wanted to use in the site, in order to separate these from the main functionality, I stored them in a separate JSON formatted file called `quotes.json`. Which looks something like this:
@@ -49,6 +52,10 @@ Ed provided me with a set of quotes that he wanted to use in the site, in order 
 This is relatively straightforward, each quote is stored as a string in an array called `leon`. 
 
 To load the quotes in, I used the [jQuery.getJSON() method](http://api.jquery.com/jquery.getjson/) on `$(document).ready` and applied `leon` to a variable called `quotes` for later use.
+
+</section>
+
+<section>
 
 ## Choosing the number of quotes
 
@@ -86,6 +93,8 @@ function shuffle(array) {
 ```
 
 Relatively simple once you break it down.
+
+</section>
 
 ## Display
 
