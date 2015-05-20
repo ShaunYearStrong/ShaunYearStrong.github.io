@@ -29,7 +29,7 @@
           &:after {
             content: '';
             width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-            @include inline-block;
+            display: inline-block;
           }
 
           .post & {
@@ -40,7 +40,7 @@
 
     li {
 
-      @include inline-block;
+      display: inline-block;
       width: 45px;
       height: 45px;
       border-radius: 50%;

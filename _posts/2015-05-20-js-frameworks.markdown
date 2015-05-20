@@ -28,7 +28,7 @@ I loved the mix of a simple premise, with a lot of freedom around how you get th
 
 <section>
 
-### Taking it further
+## Taking it further
 
 That final point: "Uses a JS framework of your choice", got me thinking; What is the *right* choice?
 
@@ -44,9 +44,9 @@ Code simplicity was a harder one to come to, but it's something I feel applies t
 
 <section>
 
-### The project
+## The project
 
-You can see my progress so far (and fork / comment on it) on my (Github repo)[https://github.com/ShaunYearStrong/framework-keyboards].
+You can see my progress so far (and fork / comment on it) on my [Github repo](https://github.com/ShaunYearStrong/framework-keyboards).
 
 I'll be adding new posts for each completed framework along with a case study and a final wrap up as and when they're finished.
 

@@ -12,7 +12,7 @@ header {
     right: 10px;
     bottom: 0;
     cursor: pointer;
-    @include inline-block;
+    display: inline-block;
     width: $nav-width;
     height: $nav-height;
     @include rem(margin, 1rem);
