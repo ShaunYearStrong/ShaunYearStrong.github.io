@@ -167,6 +167,9 @@ blockquote {
   @include rem(font-size, 2rem);
   @include rem(margin, 2rem auto);
   @include rem(padding, 1.5rem);
+  font-weight: $light;
+  font-style: italic;
+  line-height: 1.4;
   border: {
     top: 3px solid $teal;
     bottom: 3px solid $teal;
