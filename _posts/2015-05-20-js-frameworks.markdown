@@ -16,10 +16,10 @@ Recently I've been smashing [Code wars](http://www.codewars.com/) for simple, lo
 So, I asked around and a friend of mine sent me across an interview question they use for prospective developers.
 
 <blockquote>
-    Create an on-screen keyboard that:
-        - behaves as a normal keyboard does (Paying particular attention to the caps lock and shift functionality)
-        - Is responsive
-        - Uses a JS framework of your choice
+Create an on-screen keyboard that:
+- behaves as a normal keyboard does (Paying particular attention to the caps lock and shift functionality)
+- Is responsive
+- Uses a JS framework of your choice
 </blockquote>
 
 I loved the mix of a simple premise, with a lot of freedom around how you get there.
